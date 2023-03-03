@@ -1,0 +1,7 @@
+{
+  "name": "pyscript-prettier-precommit",
+  "version": "3.0.0-alpha.6",
+  "bin": {
+    "prettier": "dist/bin-prettier.js"
+  }
+}
