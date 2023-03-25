@@ -32536,7 +32536,7 @@ function isTextLikeNode(node) {
   return node.type === "text" || node.type === "comment";
 }
 function isScriptLikeTag(node) {
-  return node.type === "element" && (node.fullName === "py-script" || node.fullName === "py-config" || node.fullName === "script" || node.fullName === "style" || node.fullName === "svg:style" || is_unknown_namespace_default(node) && (node.name === "script" || node.name === "style"));
+  return node.type === "element" && (node.fullName === "py-script" || node.fullName === "py-repl" || node.fullName === "py-config" || node.fullName === "script" || node.fullName === "style" || node.fullName === "svg:style" || is_unknown_namespace_default(node) && (node.name === "script" || node.name === "style"));
 }
 function canHaveInterpolation(node) {
   return node.children && !isScriptLikeTag(node);

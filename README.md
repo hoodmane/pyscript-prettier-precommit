@@ -1,5 +1,5 @@
 This is a precommit hook that applies a patched version of prettier that
-recognizes the `py-script` and `py-config` tags and does not reformat their
+recognizes the `py-script`, `py-config` and `py-repl` tags and does not reformat their
 contents. The patch that has been applied to prettier is as follows:
 
 ```patch
@@ -11,6 +11,7 @@ contents. The patch that has been applied to prettier is as follows:
      node.type === "element" &&
 -    (node.fullName === "script" ||
 +    (node.fullName === "py-script" ||
++    (node.fullName === "py-repl" ||
 +      node.fullName === "py-config" ||
 +      node.fullName === "script" ||
        node.fullName === "style" ||
